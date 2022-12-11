@@ -8,6 +8,17 @@ const schoolSchema = new Schema( {
         minlength: 5,
         maxlength: 50,
     },
+    email: {
+        type: String,
+        required: true,
+        unique: true,
+    },
+    password: {
+        type: String,
+        required: true,
+        unique: true,
+        minlength: 8,
+    },
     location: {
         type: String,
         required: true,
