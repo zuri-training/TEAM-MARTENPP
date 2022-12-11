@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const SchoolModel = require('./School');
+const SchoolModel = require('../models/School');
 
 const debtorSchema = new Schema( {
     name: {
@@ -9,13 +9,13 @@ const debtorSchema = new Schema( {
         maxlength: 50,
     },
     debt: {
-        type: Integer,
+        type: Number,
         required: true,
     },
-    School:{
+    School:[{
         type: Schema.Types.ObjectId,
         ref: SchoolModel,
-    },
+    }],
 }, {timestamps: true});
 
 const DebtorModel = model("Debtor", debtorSchema);
