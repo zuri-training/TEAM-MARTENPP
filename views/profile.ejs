@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1e6fa933e1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="views/css/profile.css">
+</head>
+<body onmousedown="return false" onselectstart="return false">
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+               <li><img src="views/mages/logo.png" id="logo" alt="logo"></li>
+               <li><a href="dashboard"><i class="fa-brands fa-windows"></i> Dashboard</a></li>
+               <div class="prof" ><li id="prof"><a href="#Profile"><i class="fa-solid fa-user"></i> Profile</a></li></div>
+                <li><a href="#Notification"><i class="fa-solid fa-bell"></i> Notification</a></li>
+                <li><a href="#List of Debtors"><i class="fa-solid fa-user-check"></i> List of Debtors</a></li>
+                <li><a href="#List of Contends"><i class="fa-solid fa-calendar"></i> List of Contends</a></li>
+                <li><a href="#List of Contends"><i class="fa-solid fa-question"></i> FAQ/Support</a></li>
+                <li><form action="/logout?_method=DELETE" method="POST">
+              <button
+                class="nav-link fw-bold py-1 px-0 btn p=3 btn-dark text-white"
+                type="submit"
+              >
+                Logout
+              </button>
+            </form></li>
+            </ul>
+        </nav>
+        <div class="con2">
+            <div class="main">
+                <h4 class="man">
+                    <img src="views/images/pp.png">
+                   </h4>
+                </div>
+           <div class="main2">
+            <h4 class="wof">Word of Faith Int'l School</h4>
+            <p class="wofi">wordfaithinternational@gmail.com</p>
+           </div>
+           <div class="main3">
+            <img src="views/images/lin.png">
+           </div>
+           <div class="main4">
+            <p>Welcome:  <%= name %></p>
+            <hr class="line">
+            <div class="sub-con">
+            <img src="views/images/profile.png">
+            <a class="sub-con" href="editprofile"><i class="fa fa-pencil-square-o">.</i></a>
+        </div>
+        <div class="mid">
+            <h3>Kings International College</h3>
+            <h5 class="schname">Kingsinternationalcollege@gmail.com</h5>
+            <button class="but1" type="button"><a href="editprofile">Edit Profile</a></button>
+            <button class="but2" type="button"><a href="resetpassword">Reset Password</a></button>
+        </div>
+           </div>
+        </div> 
+        
+        <div class="contain">
+            <div class="contain1">
+                <h3>Profile Information</h3>
+                <p>Mobile:<h6 id="num">(44) 123 1234 123</h6></p>
+                <p>Location:   Lagos State</p>
+            </div>
+             <div class="contain2">
+                <h3>Social Media</h3>
+                <img src="views/images/sm.png">
+             </div>
+        </div>
+        </div>
+        
+        
+      
+        
+
+            
+
+</body>
+</html>
