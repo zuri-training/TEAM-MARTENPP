@@ -3,7 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const{ json } = require('express');
 const routes = require("./routes/router");
-const controller = require("./controllers/controller");
+const controller = require("./controllers/userController");
 const connectDB = require('./config/database');
 const app = express();
 
@@ -21,5 +21,5 @@ app.route("/", routes);
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
+  console.log(`Server is listening on port ${port}....`);
 });
