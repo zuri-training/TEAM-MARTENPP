@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/dashandadd.css" />
+    <link rel="stylesheet" href="views/css/dashandadd.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <script
@@ -18,14 +18,14 @@
       <header class="header">
         <nav class="sidebar">
           <ul>
-            <li><img src="images/Logo.png" id="logo" alt="logo" /></li>
+            <li><img src="/views/images/Logo.png" id="logo" alt="logo" /></li>
             <li>
               <a href="#Dashboard"
                 ><i class="fa-brands fa-windows"></i> Dashboard</a
               >
             </li>
             <li>
-              <a href="#Profile"><i class="fa-solid fa-user"></i> Profile</a>
+              <a href="profile"><i class="fa-solid fa-user"></i> Profile</a>
             </li>
             <li>
               <a href="#Notification"
@@ -48,9 +48,14 @@
               >
             </li>
             <li>
-              <a href="#Log Out"
-                ><i class="fa-solid fa-right-from-bracket"></i> Log Out</a
+              <form action="/logout?_method=DELETE" method="POST">
+              <button
+                class="nav-link fw-bold py-1 px-0 btn p=3 btn-dark text-white"
+                type="submit"
               >
+                Logout
+              </button>
+            </form>
             </li>
           </ul>
         </nav>
@@ -58,7 +63,7 @@
 
       <div class="debtor-heading">
         <div class="debtor-logo">
-          <img src="images/image 7.png" alt="" />
+          <img src="views/images/image 7.png" alt="" />
         </div>
         <div class="debtor-label">
           <h3>Word of Faith Int'l School</h3>
@@ -67,7 +72,7 @@
 
         <hr />
 
-        <div class="Admin"><h4>Admin</h4></div>
+        <div class="Admin"><h4>Welcome:  <%= name %></h4></div>
       </div>
     </div>
 

@@ -129,7 +129,7 @@ hr{
 }
 #home{
     background-color: var(--bg-color);
-    background-image: linear-gradient(to left , rgba(234, 242, 247, 0.52), rgba(11, 109, 33, 0.651)), url('../images/img\ 2.jpeg');
+    background-image: linear-gradient(to left , rgba(234, 242, 247, 0.52), rgba(11, 109, 33, 0.651)), url('../views/images/img\ 2.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -185,7 +185,7 @@ hr{
     padding-bottom: 5px;
 }
 .we-do{
-background-image: linear-gradient(to left , rgba(229, 248, 234, 0.52), rgba(24, 82, 19, 0.73)), url('../images/Image.jpg');
+background-image: linear-gradient(to left , rgba(229, 248, 234, 0.52), rgba(24, 82, 19, 0.73)), url('views/images/Image.jpg');
 width: 100%;
 height: 100%;
 background-size: cover;
