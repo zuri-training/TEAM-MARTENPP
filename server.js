@@ -5,12 +5,19 @@ if (process.env.NODE_ENV !== 'production') {
 // Importing Libraies that we installed using npm
 const express = require('express');
 const app = express();
+const{ json } = require('express');
+const routes = require("./routes/router");
 const bcrypt = require('bcrypt'); // Importing bcrypt package
 const passport = require('passport');
 const initializePassport = require('./passport-config');
 const flash = require('express-flash');
 const session = require('express-session');
 const methodOverride = require('method-override');
+const connectDB = require('./config/database');
+
+
+// connect to the database
+connectDB();
 
 initializePassport(
   passport,
@@ -20,6 +27,7 @@ initializePassport(
 
 const users = [];
 
+app.use(express.json());
 app.use('/views', express.static('views'));
 app.use(express.urlencoded({ extended: false }));
 app.use(flash());
@@ -133,6 +141,10 @@ function checkNotAuthenticated(req, res, next) {
   next();
 }
 
-app.listen(3000, () => {
-  console.log('Server running on port 3000');
+app.use("/", routes);
+
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
 });

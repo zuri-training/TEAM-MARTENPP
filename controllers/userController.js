@@ -2,22 +2,10 @@ const SchoolModel = require('../models/School');
 
 
 /**
- * create account
- * login
  * reset password
  * comment on a post
  * get all debtors from one school
 */
-
-//POST
-exports.registerUser = async(req,res) => {
-
-}
-
-//POST
-exports.loginUser = async(req,res) => {
-    
-}
 
 //PATCH
 exports.resetUserPassword = async(req,res) => {
