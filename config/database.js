@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-require('dotenv').config(); //allow us to use variables from out .env file
+require('dotenv').config(); //allow us to use variables from our .env file
 
 const connectDB = () => {
     try

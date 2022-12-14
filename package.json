@@ -1,7 +1,7 @@
 {
-  "name": "my_deptors-team-martenpp",
+  "name": "my_debtors-team-martenpp",
   "version": "1.0.0",
-  "description": "My Deptor App, a Project of Zuri Cohort 2, in partial fulfillment of the requirement of Zuri Cohort 2 Training",
+  "description": "My Debtors App, a Project of Zuri Cohort 2, in partial fulfillment of the requirement of Zuri Cohort 2 Training",
   "main": "index.js",
   "scripts": {
     "maten": "nodemon server.js"
@@ -23,6 +23,7 @@
     "express-flash": "^0.0.2",
     "express-session": "^1.17.3",
     "method-override": "^3.0.0",
+    "mongoose": "^6.8.0",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0"
   },
