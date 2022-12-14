@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'poppins', sans-serif;
+}
+li a {
+    text-decoration: none;
+    color:#090C9B;
+  }
+  li {
+    list-style: none;
+    margin: 20px;
+  }
+  li img {
+    width: 77px;
+    height:64px;
+    margin-left: 30px;
+  }
+  .container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  .sidebar{
+    top:0; left:0; bottom:0;
+    width:16%;
+    height:100vh;
+    background: #CECEEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    
+  }
+  .prof{
+    width: 250px;
+    height: 40px;
+    background-color: #fff;
+    margin-left:-20px
+  }
+  #prof{
+    margin-left: 40px;
+    padding-top: 8px;
+  }
+  .con2{
+    width: 80%;
+    height: 50px;
+    position: relative;
+    flex-direction: row;
+    display: flex;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.man{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.wof{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.wofi{
+    margin-left: 40px;
+    color: #3235AC;
+}
+.line{
+    width: 980px;
+    margin-top: 25px;
+    margin-left: -430px;
+    border: 1px solid #DADADA;
+}
+.main3 img{
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.main4{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.backbut{
+    margin-top: 100px;
+    margin-left: -960px;
+}
+.backbut p{
+    margin-left: 40px;
+    margin-top: -25px;
+    color: #090C9B ;
+    font-weight: 500;
+    font-size: 18px;
+}
+.backbut-sub{
+    margin-top: 128px;
+    margin-left: -160px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    color: #3C3744;
+    font-size: 14px;
+}
+.contain{
+    width: 500px;
+    margin-top: 200px;
+    margin-left: -955px;
+}
+.contain1 label{
+    margin-top: 40px;
+}
+.contain1 input{
+    width: 260px;
+    height: 35px;
+    margin-top: 10px;
+    background-color: #E6E6E6;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px solid #000;
+}
+.contain1 button{
+    width: 80px;
+    height: 30px;
+    margin-left: 40px;
+    background-color: #99D9B4;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+.words{
+    margin-top: 20px;
+    color: #5D5863;
+    font-size: 14px;
+}
+.containn{
+    margin-top: 40px;
+}
+.containn input{
+    background-color: #CECEEB;
+    border: none;
+    border-radius: 5px;
+    width: 260px;
+    height: 35px;
+}
+.containnn{
+    display: flex;
+    flex-direction: row;
+}
+.containnn label{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pwrd{
+    margin-top: 20px;
+}
+.contain2 input{
+    width: 260px;
+    height: 35px;
+    color: #CECEEB;
+}
+.contain3 input{
+    width: 260px;
+    height: 35px;
+    color: #CECEEB;
+}
+.contain3 label{
+    margin-top: 20px;
+}
+::placeholder{
+padding-left: 10px;
+}
+.cf{
+    margin-left: 80px;
+}
+.save{
+    margin-left: -40px;
+    margin-top: 40px;
+    
+}
+.save button{
+    width: 80px;
+    background-color: #2B9658;
+}
+.save button a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #2B9658;
+}
+label{
+    margin-bottom: 40px;
+}

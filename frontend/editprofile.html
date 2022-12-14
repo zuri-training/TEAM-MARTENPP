@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1e6fa933e1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/editprofile.css">
+</head>
+<body onmousedown="return false" onselectstart="return false">
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+               <li><img src="images/logo.png" id="logo" alt="logo"></li>
+               <li><a href="./dashboard.html"><i class="fa-brands fa-windows"></i> Dashboard</a></li>
+               <div class="prof" ><li id="prof"><a href="#Profile"><i class="fa-solid fa-user"></i> Profile</a></li></div>
+                <li><a href="./notification.html"><i class="fa-solid fa-bell"></i> Notification</a></li>
+                <li><a href="./debtor.html"><i class="fa-solid fa-user-check"></i> List of Debtors</a></li>
+                <li><a href="./Contendlist.html"><i class="fa-solid fa-calendar"></i> List of Contends</a></li>
+                <li><a href="./faq.html"><i class="fa-solid fa-question"></i> FAQ/Support</a></li>
+                <li><a href="./login.html"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a></li>
+            </ul>
+        </nav>
+        <div class="con2">
+            <div class="main">
+                <h4 class="man">
+                    <img src="images/pp.png">
+                   </h4>
+                </div>
+           <div class="main2">
+            <h4 class="wof">Word of Faith Int'l School</h4>
+            <p class="wofi">wordfaithinternational@gmail.com</p>
+           </div>
+           <div class="main3">
+            <img src="images/lin.png">
+           </div>
+           <div class="main4">
+            <p>Admin</p>
+            <hr class="line">
+           </div>
+           <li class="backbut"><a href="profile.html"><i class="fa fa-arrow-left"></i><p>Edit Profile</p></a></i></li>
+           <h6 class="backbut-sub">Please provide debtor's details below</h6>
+           <div class="sub-con">
+            <img src="images/profile.png">
+            <a href="#profile"><i class="fa fa-pencil-square-o">.</i></a>
+        </div>
+        <div class="contain">
+            <form>
+                <div class="contain1">
+                <div>
+                <label for="sname">School Name</label>
+                <br>
+                <input type="text" id="sname" name="sname" placeholder="Kings International College">
+                </div>
+            <div>
+                <label for="pnum">Contact</label>
+                <br>
+                <input type="number" id="pnum" name="pnum" placeholder="+234 1234567890">
+            </div>
+            <div>
+                <label for="fbook">Facebook</label>
+                <br>
+                <input type="text" id="fbook" name="fbook" placeholder="@username">
+            </div>
+            <div>
+                <label for="twit">Twitter</label>
+                <br>
+                <input type="text" id="twit" name="twit" placeholder="@username">
+            </div>
+        </form>
+        </div>
+        <form>
+            <div class="contain2">
+            <div>
+                <label for="smail">School Email</label>
+                <br>
+                <input type="email" id="smail" name="smail" placeholder="Kingsinternationalcollege@gmail.com">
+            </div>
+            <div>
+                <label for="Location">Location</label>
+                <br>
+                <input type="text" id="Location" name="Location" placeholder="Kings International College">
+            </div>
+            <div>
+                <label for="ig">Instagram</label>
+                <br>
+                <input type="text" id="ig" name="ig" placeholder="@username">
+            </div>
+            <button type="button"><a href="">Save</a></button>
+        </div>
+        </div>
+        </div>
+        </form>
+    </div>
+    
+</body>
+</html>

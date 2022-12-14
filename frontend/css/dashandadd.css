@@ -2,7 +2,9 @@
   --debtor-color: #ceceeb;
   --debtor-color2: #090c9b;
 }
-
+* {
+  font-family: "Poppins", sans-serif;
+}
 body {
   overflow-x: hidden;
 }

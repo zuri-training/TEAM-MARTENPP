@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img{
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.top{
+    font-family: poppins,sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: #0f0e0e;
+
+}
+
+.anima{
+    padding-left: 180px;
+    margin-top: 30px;
+}
+.content{
+    font-family: poppins, sans-serif;
+}
+.content p{
+    font-size: 2.0rem;
+    font-weight: 200;
+    padding-left: 130px;
+    color: #F0F3FA;
+}
+.sub{
+    font-family: poppins, sans-serif;
+    font-size: 1.2rem;
+    margin-top: 16px;
+    color: #fff;
+    padding-left: 112px;
+    font-weight: lighter;
+}
+.but{
+    font-size: 1.2rem;
+    font-family: poppins, sans-serif;
+    height: 45px;
+    width: 180px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 220px;
+    color: #fff;
+    background-color: #4449AB;
+}
+#brk{
+    font-size: 1.2rem;
+    color: #fff;
+    margin-left: 112px;
+    font-weight: lighter;
+    margin-top: 4px;
+}
+
+.con{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(24, 21, 228);
+    position: relative;
+}
+.main{
+    width: 50%;
+    height: 100vh;
+    background-color: #4449AB;
+    position: relative;
+}
+.container{
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+}
+
+#fname{
+    width: 600px;
+    height: 35px;
+    margin-left: 35px;
+    margin-top: 8px;
+}
+.frm1{
+    margin-top: 35px;
+}
+#mail{
+    width: 600px;
+    height: 35px;
+    margin-left: 35px;
+    margin-top: 8px;
+}
+#pword{
+    width: 600px;
+    height: 35px;
+    margin-left: 35px;
+    margin-top: 8px;
+}
+::placeholder{
+    font-family: poppins, sans-serif;
+    padding-left: 10px;
+}
+label{
+    font-family: poppins, sans-serif;
+    color: #3C3744;
+    margin-left: 35px;
+    font-weight: 400;
+}
+.frm2{
+    margin-top: 22px;
+}
+.frm3{
+    margin-top: 22px;
+}
+.frm4{
+    margin-top: 16px;
+}
+#tc{
+    margin-left: 35px;
+}
+.tc{
+    margin-left: 8px;
+}
+.fp{
+    margin-left: 166px;
+    text-decoration: none;
+    color: #080A81;
+}
+.frm5{
+    width: 600px;
+    height: 45px;
+    margin-left: 35px;
+    margin-top: 35px;
+    background-color: #090C9B;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px  #0f0e0e;
+    font-family: poppins, sans-serif;
+    font-size: 1.2rem;
+}
+.frm6{
+    text-align: center;
+    font-family: poppins, sans-serif;
+    font-size: 1.2rem;
+    color:#0f0e0e;
+    margin-top: 10px;
+}
+.frm7{
+    width: 600px;
+    height: 45px;
+    margin-left: 35px;
+    margin-top: 10px;
+    color: #090C9B;
+    border: 1px solid #090C9B;
+    border-radius: 35px;
+    box-shadow: 2px  #0f0e0e;
+    font-family: poppins, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+#login{
+    text-align: center;
+    margin-top: 8px;
+    font-family: poppins, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #0f0e0e;
+}
+#lg{
+    text-decoration: none;
+    color: #090C9B;
+    font-weight: bold;
+}
+.frm7 img{
+    padding-left: 6px;
+}
+.but a{
+    text-decoration: none;
+    color: #fff;
+}
+.frm5 a{
+    text-decoration: none;
+    color: #fff;
+}
+.frm7 a{
+    text-decoration: none;
+    color: #090C9B;
+}
+@media screen and (max-width: 1024px ) {
+    .anima{
+        padding-left: 72px;
+        margin-top: 25px;
+        width: 0.4rem;
+    }
+    .content p{
+        font-size: 1.58rem;
+        font-weight: 200;
+        padding-left: 104px;
+        color: #F0F3FA;
+        margin-top: 8px;
+    }
+    .sub{
+        font-family: poppins, sans-serif;
+        font-size: 1.2rem;
+        margin-top: 12px;
+        color: #fff;
+        padding-left: 50px;
+        font-weight: lighter;
+    }
+    #brk{
+        font-size: 1.2rem;
+        color: #fff;
+        margin-left: 64px;
+        font-weight: lighter;
+        margin-top: 2px;
+    }
+    .but{
+        font-size: 1.2rem;
+        font-family: poppins, sans-serif;
+        height: 45px;
+        width: 180px;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-left: 165px;
+        color: #fff;
+        background-color: #4449AB;
+    }
+    #fname{
+        width: 400px;
+        height: 35px;
+        margin-left: 35px;
+        margin-top: 8px;
+    }
+    #mail{
+        width: 400px;
+        height: 35px;
+        margin-left: 35px;
+        margin-top: 8px;
+    }
+    #pword{
+        width: 400px;
+        height: 35px;
+        margin-left: 35px;
+        margin-top: 8px;
+    }
+    .tc{
+        margin-left: 4px;
+        font-size: 12px;
+    }
+    .frm4{
+        margin-top: 12px;
+    }
+    .fp{
+        margin-left:46px;
+        text-decoration: none;
+        color: #080A81;
+    }
+    .frm5{
+        width: 400px;
+        height: 45px;
+        margin-left: 35px;
+        margin-top: 20px;
+        background-color: #090C9B;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 2px  #0f0e0e;
+        font-family: poppins, sans-serif;
+        font-size: 1.2rem;
+    }
+    .frm6{
+        text-align: center;
+        font-family: poppins, sans-serif;
+        font-size: 1.2rem;
+        color:#0f0e0e;
+        margin-top:5px;
+    }
+    .frm7{
+        width:400px;
+        height: 45px;
+        margin-left: 35px;
+        margin-top: 5px;
+        color: #090C9B;
+        border: 1px solid #090C9B;
+        border-radius: 35px;
+        box-shadow: 2px  #0f0e0e;
+        font-family: poppins, sans-serif;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .frm1{
+        margin-top: 20px;
+    }
+    #login{
+        text-align: center;
+        margin-top: 8px;
+        font-family: poppins, sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        color: #0f0e0e;
+    }
+    #lg{
+        text-decoration: none;
+        color: #090C9B;
+        font-weight: bold;
+    }
+}
