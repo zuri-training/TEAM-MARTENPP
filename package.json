@@ -4,7 +4,8 @@
   "description": "My Debtors App, a Project of Zuri Cohort 2, in partial fulfillment of the requirement of Zuri Cohort 2 Training",
   "main": "index.js",
   "scripts": {
-    "maten": "nodemon server.js"
+    "maten": "nodemon server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
