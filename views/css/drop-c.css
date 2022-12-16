@@ -1,0 +1,184 @@
+:root {
+  --bg-color: rgb(206, 234, 245);
+  --second-bg-color: rgb(225, 243, 252);
+  --text-color: #01060c;
+  --second-color: rgb(24, 21, 228);
+  --main-color: white;
+  --other-color: #1e3652;
+  --final-color: #0f0e0e;
+  --big-font: 5.7rem;
+  --h2-fonts: 3.8rem;
+  --h3-fonts: 3rem;
+  --h4-fonts: 2rem;
+  --p-font: 1.53rem;
+}
+body {
+  background-color: white;
+  color: #090c9b;
+  width: 100%;
+  height: 100vh;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 1px;
+  bottom: 0;
+  right: 1px;
+  width: 17%;
+  background: #ceceeb;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar a {
+  display: block;
+  height: 100%;
+  line-height: 35px;
+}
+
+.b-btn a {
+  color: var(--second-color);
+  border: 1px solid transparent;
+  transition: ease 0.4s;
+  width: 100%;
+  left: 0;
+}
+.b-btn .lg {
+  color: rgb(58, 50, 50);
+  background-color: transparent;
+}
+.b-btn .lg:hover {
+  background: white;
+  border: 1px solid var(--second-color);
+  color: var(--second-color);
+}
+
+.container {
+  margin-left: 15%;
+  height: 100vh;
+  padding: 0px 30px;
+  padding-left: 5%;
+}
+a {
+  text-decoration: none;
+  color: #090c9b;
+}
+li {
+  list-style: none;
+}
+li img {
+  width: 77px;
+  height: 64px;
+  padding-left: 30px;
+}
+.school-logo {
+  display: flex;
+}
+.search {
+  border-radius: 30px;
+  width: 250px;
+  height: 30px;
+  text-align: left;
+  text-align: center;
+  border: 1.5px solid #080a81;
+}
+.blanket {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.top-left {
+  display: flex;
+  padding: 10px;
+  padding-top: 0px;
+}
+.border-rotate {
+  border-left: 2px #080a81 solid;
+  width: 8px;
+  margin: 17px;
+}
+.admin {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.bottom {
+  border-bottom: 1px solid rgb(68, 66, 66);
+}
+.beyst {
+  display: flex;
+}
+p {
+  color: black;
+}
+.freq {
+  align-items: center;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+.freq img {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.freb {
+  align-items: center;
+}
+.freb h4 {
+  font-size: 25px;
+  font-weight: 400;
+  padding-top: 0;
+}
+.freb p {
+  font-size: 15px;
+  font-weight: 200;
+  padding-top: 0;
+}
+.drop {
+  /* padding-top: 10px; */
+  position: relative;
+  /* grid-gap: 30px; */
+  /* justify-content: center; */
+  padding-left: 40px;
+}
+.dropbtn {
+  background: #e6e6f8;
+  color: rgb(17, 17, 17);
+  /* padding: 16px; */
+  text-align: left;
+  padding-left: 20px;
+  height: 200px;
+  font-size: 16px;
+  width: 70%;
+  border: none;
+  justify-content: space-between;
+}
+.h-btn {
+}
+.h-btn a {
+  color: var(--main-color);
+  font-weight: 500;
+  padding: 8px 35px;
+  border: 1px solid;
+  transition: ease 0.4s;
+}
+.h-btn .login {
+  color: red;
+  background-color: transparent;
+  border-radius: 7px;
+}
+.h-btn .login:hover {
+  background: #d81313;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+.h-btn .register {
+  color: rgb(230, 236, 230);
+  background-color: #0bee57;
+  border-radius: 7px;
+  margin-left: 15px;
+}
+.h-btn .register:hover {
+  background: transparent;
+  border: 4px solid #0bee57;
+  color: #0bee57;
+}

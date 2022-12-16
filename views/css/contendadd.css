@@ -1,0 +1,57 @@
+:root {
+  --bg-color: rgb(206, 234, 245);
+  --second-bg-color: rgb(225, 243, 252);
+  --text-color: #01060c;
+  --second-color: rgb(24, 21, 228);
+  --main-color: white;
+  --other-color: #1e3652;
+  --final-color: #0f0e0e;
+  --big-font: 5.7rem;
+  --h2-fonts: 3.8rem;
+  --h3-fonts: 3rem;
+  --h4-fonts: 2rem;
+  --p-font: 1.53rem;
+}
+.btn {
+  display: inline-block;
+  font-size: 15px;
+  padding: 10px 30px;
+  font-weight: 500;
+  margin: 5px 0 10px;
+  background: var(--second-color);
+  color: var(--main-color);
+  border-radius: 8px;
+  transition: ease 0.2s;
+}
+.btn:hover {
+  background: transparent;
+  border: 2px solid var(--second-color);
+  color: var(--second-color);
+}
+.x {
+  padding-left: 60%;
+  padding-top: 40px;
+}
+.con-add {
+  align-items: center;
+  justify-content: center;
+  padding-left: 30%;
+}
+.b-add {
+  padding-left: 10%;
+}
+.c-add {
+  padding: 20px;
+}
+.c-add h2 {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: var(--h4-fonts);
+  padding-bottom: 20px;
+}
+.what p {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: var(--p-font);
+  padding-bottom: 20px;
+}

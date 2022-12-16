@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contend Form</title>
+    <link rel="stylesheet" href="views/css/Contendform.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1e6fa933e1.js" crossorigin="anonymous"></script>
+
+</head>
+<body onmousedown="returnfalse" onselect="returnfalse">
+   
+    <div class="wrapper">
+        
+      <header class="header">
+        <nav class="sidebar">
+          <ul>
+            <li><img src="/views/images/Logo.png" id="logo" alt="logo" /></li>
+            <li>
+              <a href="dashboard"
+                ><i class="fa-brands fa-windows"></i> Dashboard</a
+              >
+            </li>
+            <li>
+              <a href="profile"><i class="fa-solid fa-user"></i> Profile</a>
+            </li>
+            <li>
+              <a href="notification"
+                ><i class="fa-solid fa-bell"></i> Notification</a
+              >
+            </li>
+            <li>
+              <a href="addadebtor"
+                ><i class="fa-solid fa-user-check"></i> List of Debtors</a
+              >
+            </li>
+            <li>
+              <a href="contendlist"
+                ><i class="fa-solid fa-calendar"></i> List of Contends</a
+              >
+            </li>
+          </li>
+          <li>
+            <a href="settings"
+              ><i class="fa-solid fa-gear"></i> Settings</a
+            >
+          </li>
+            <li>
+              <a href="faq"><i class="fa-solid fa-question"></i> FAQ/Support</a>
+            </li>
+            <li>
+              <form action="/logout?_method=DELETE" method="POST">
+                <button
+                  class="nav-link fw-bold py-1 px-0 btn p=3 btn-dark text-white"
+                  type="submit"
+                >
+                  Logout
+                </button>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </header>
+        <div class="container">
+        <div class="blanket">
+        <div class="school-logo">
+            <img src="views/images/image 7.png">
+    
+        <div class="top-left">
+    
+            <div class="logo-desc">
+            <p> World of faith int'l school</p>
+          <p><a href="">wordfaithinternational@gmail.com</a></p>  
+          </div> 
+          <p class="border-rotate"></p>
+          <p class="admin">Admin</p>
+            </div>
+            </div>
+    
+          <div> 
+            <input  class="search" type="search" placeholder="search">
+        </div>
+    
+        </div>
+        <p class="bottom"></p>
+
+        <div class="title">
+            <p class="title-bold"><span><i class="fa-solid fa-arrow-left"></i></span>Start a Contend</p>
+            <p>Please provide debtors details below</p>
+        </div>
+
+    <form action="ContSuccess.html">
+        <div class="top-input">
+            <div class="input-group">
+                <label>Firstname</label>
+                <input for="fname" type="text" placeholder="john" required>
+            </div>
+    
+            <div class="input-group col-two">
+                <label>Lastname</label>
+                <input for="lname" type="text" placeholder="David" required>
+            </div>
+        </div>
+
+        <div class="sec-input">
+            <div class="input-group">
+                <label>Name of School</label>
+                <input for="schname" type="text" placeholder="abc int'l" required>
+            </div>
+    
+            <div class="input-group col-two">
+                <label>Date</label>
+                <input for="date" type="date" placeholder="DD/MM/YYY" required>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <label>Contend</label>
+            <textarea rows="8" cols="" required></textarea>
+        </div>
+
+        <div class="btns">
+            <button id="cancl-btn" type="reset">Cancel</button>
+            <input type="submit" id="sub-btn">
+        </div>
+       
+    </form>
+   
+</body>
+</html>
