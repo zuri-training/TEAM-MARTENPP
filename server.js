@@ -81,7 +81,7 @@ app.get("/about", checkNotAuthenticated, (req, res) => {
 });
 
 app.get("/contact", checkNotAuthenticated, (req, res) => {
-  res.render("contact.ejs");
+  res.render("homepage.ejs");
 });
 
 app.get("/pricing", checkNotAuthenticated, (req, res) => {
