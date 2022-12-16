@@ -1,4 +1,89 @@
-.about-us{
-    display: flex;
-    padding-top: 100px;
+.about-us {
+  display: flex;
+  padding-top: 100px;
+  background-color: var(--main-color);
+  padding-bottom: 0;
+}
+.about-us .ytn {
+  padding: 30px 30px;
+  cursor: pointer;
+  padding-right: 10%;
+  padding-top: 5%;
+}
+.ytn h4 {
+  padding-bottom: 10%;
+  font-weight: 500;
+  font-size: var(--h4-fonts);
+}
+.ytn h1 {
+  padding-bottom: 10%;
+  font-size: 40px;
+  color: var(--second-color);
+}
+.ytn p {
+  color: var(--second-color);
+  padding-bottom: 10%;
+  font-size: 20px;
+  font-weight: 300;
+}
+.vision {
+  display: flex;
+  padding-top: 0px;
+  background-color: var(--second-bg-color);
+  padding-bottom: 10px;
+}
+.vision .vvn {
+  padding-top: 10%;
+}
+.vision .vtn {
+  padding: 30px 30px;
+  cursor: pointer;
+  padding-right: 10%;
+  padding-top: 5%;
+}
+.vtn h4 {
+  color: var(--second-color);
+  padding-bottom: 5%;
+  font-weight: 400;
+  padding-left: 40%;
+  font-size: 20px;
+}
+
+.vtn p {
+  color: var(--second-color);
+  padding-bottom: 10%;
+  font-size: 18px;
+  margin-inline: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+.mision {
+  display: flex;
+  padding-top: 0px;
+  background-color: var(--main-color);
+  padding-bottom: 10px;
+}
+.mision .mvn {
+  padding-top: 3%;
+}
+.mision .mtn {
+  padding: 30px 30px;
+  cursor: pointer;
+  padding-right: 10%;
+  padding-top: 5%;
+}
+.mtn h4 {
+  color: var(--second-color);
+  padding-bottom: 5%;
+  font-weight: 500;
+  padding-left: 60%;
+  font-size: 20px;
+}
+
+.mtn p {
+  color: var(--second-color);
+  padding-bottom: 10%;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
 }
