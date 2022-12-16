@@ -14,7 +14,7 @@ const flash = require('express-flash');
 const session = require('express-session');
 const methodOverride = require('method-override');
 const connectDB = require('./config/database');
-
+const Users = require('./models/School');
 
 // connect to the database
 connectDB();
@@ -57,6 +57,16 @@ app.post(
 app.post('/register', checkNotAuthenticated, async (req, res) => {
   try {
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
+    // const data = {
+    //     // ID: Date.now().toString(),
+    //     name: req.body.name,
+    //     email: req.body.email,
+    //     password: hashedPassword,
+    //     isUser: true,
+    //   };
+
+    // const user = await Users.create(data);
+    // users.push(user);
     users.push({
       id: Date.now().toString(),
       name: req.body.name,
@@ -64,6 +74,7 @@ app.post('/register', checkNotAuthenticated, async (req, res) => {
       password: hashedPassword,
     });
     console.log(users); // Display newly registered in the console
+    // console.log(users)
     res.redirect('/login');
   } catch (e) {
     console.log(e);

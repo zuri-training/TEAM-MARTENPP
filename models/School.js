@@ -21,14 +21,22 @@ const schoolSchema = new Schema( {
     },
     location: {
         type: String,
-        required: true,
         maxlength: 50,
     },
     isUser: {
         type: Boolean,
         default: false
     },
-    category: {
+    contact: {
+        type: String,
+    },
+    facebook: {
+        type: String,
+    },
+    instagram: {
+        type: String,
+    },
+    twitter: {
         type: String,
     },
     Debtors: [

@@ -1,18 +1,14 @@
 const DebtorModel = require('../models/Debtors');
 
 //POST
-exports.addDebtor = async(req,res) => {
-    const debtor = await req.body;
+exports.createDebtor = async(data) => {
+    // const debtor = await req.body;
     try {
-        const newDebtor = await DebtorModel.create(debtor);
+        const newDebtor = await DebtorModel.create(data);
             if(!newDebtor) return res.status(400).send("An error occured");
-        res.status(201).json(
-            {
-                message: "Created Successfully!",
-                "Debtor" : newDebtor 
-            }
-        );
-    } catch (error) {
+        return newDebtor;
+    } 
+    catch (error) {
         console.error(error.message)
         res.status(500).send(error.message);
     }
@@ -25,20 +21,6 @@ exports.getAllDebtors= async(req,res) => {
         const debtors = await DebtorModel.find();
             if(!debtors) return res.status(404).send("No Debtors");
         res.status(200).json({Debtors : debtors});
-    } catch (err) {
-        console.error(err.message);
-        res.status(500).send("An error occurred");
-    }
-}
-
-//GET
-exports.getAllDebtorsOneSchool = async(req,res) => {
-    const { id } = req.query; //the id of the school
-
-    try {
-        const allDebtors = await DebtorModel.find({School: id});
-            if(!allDebtors) return res.status(404).send("Not Found!");
-        res.status(200).json({"Debtors" : allDebtors});
     } catch (err) {
         console.error(err.message);
         res.status(500).send("An error occurred");
@@ -76,14 +58,24 @@ exports.getDebtorById = async(req,res) => {
     
 }
 
+//PATCH
+exports.editDebtor = async(id, body) => {
+    try {
+        const debtor = await DebtorModel.findByIdAndUpdate(id, body);
+            if(!debtor) return res.status(404).send("An error occurred");
+        return debtor;
+    } catch (err) {
+        res.status(400).send(err.message);
+    }
+}
 //DELETE
-exports.deleteDebtor = async(req,res) => {
-    const { id } = req.params;
+exports.deleteDebtor = async(id) => {
+    
     try{
         const deletedDebtor = await DebtorModel.findByIdAndDelete(id);
             if(!deletedDebtor) return res.status(500).send("An error occurred");
-        res.status(200).json({message: "Debtor deleted successfully"});
-        }
+        return deletedDebtor;
+    }
     catch(err){
         res.status(500).send(err.message);
     }

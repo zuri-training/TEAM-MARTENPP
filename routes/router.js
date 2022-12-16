@@ -10,18 +10,20 @@ route.get("/", (req, res) => {
 });
 
 route.get("/api/all-schools", user.getAllSchools)
-      .get("/api/all-schools/:id", user.getSchoolByName)
+      .get("/api/all-schools/:id", user.getSchoolById)
       .get("/api/all-schools/:name", user.getSchoolByName)
-      .patch("/api/all-schools/:id", user.resetUserPassword)
-      .delete("/api/all-schools/:id", user.deleteUser);
+      .patch("/api/all-schools/:id", user.updateProfile)
+      .delete("/api/all-schools/:id", user.deleteUser)
+      .get("/api/all-schools/?id", user.getAllDebtorsOneSchool);
+      
 
 
-route.post("/api/debtors", debtor.addDebtor)
+route.post("/api/debtors", user.addDebtor)
     .get("/api/debtors", debtor.getAllDebtors)
     .get("/api/debtors/:id", debtor.getDebtorById)
     .get("/api/debtors/:name", debtor.getDebtorByName)
     // .patch("/api/debtors/:id",debtor.updateDebtor)
-    .delete("/api/debtors/:id", debtor.deleteDebtor);
+    .delete("/api/debtors/:id", user.removeDebtor);
     
 
 module.exports = route;
