@@ -103,6 +103,10 @@ app.get("/notification", checkAuthenticated, (req, res) => {
   res.render("notification.ejs", { name: req.user.name });
 });
 
+app.get("/debtorlist", checkAuthenticated, (req, res) => {
+  res.render("debtorlist.ejs", { name: req.user.name });
+});
+
 app.get("/addadebtor", checkAuthenticated, (req, res) => {
   res.render("addadebtor.ejs", { name: req.user.name });
 });
