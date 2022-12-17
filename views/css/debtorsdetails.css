@@ -2,8 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
+
 body {
   background-color: #fffcfc;
   color: #090c9b;
@@ -14,15 +14,12 @@ body {
 .container {
   margin-left: 15%;
   height: 100vh;
-  color: #090c9b;
   padding: 15px 30px;
 }
-
-li a {
+a {
   text-decoration: none;
   color: #090c9b;
 }
-
 li {
   list-style: none;
   margin: 20px;
@@ -73,55 +70,70 @@ li img {
   margin-top: 25px;
 }
 
-/* .border-rotate {
-    border-bottom: 2px solid black;
-    rotate: 90deg; 
-    width:47px;
-    margin-left: 25px;
-    border-right: 1px rgb(232, 232, 236) solid;
-    } */
 .bottom {
   border-bottom: 1px rgb(232, 232, 236) solid;
   width: 1080px;
 }
-.row {
-  display: flex;
-  background: white;
-  justify-content: space-between;
-  margin: 20px;
-  box-shadow: 2px 1px 3px #e2dada;
-  padding: 10px;
+.content {
+  padding-bottom: 20px;
 }
 
 .title {
-  display: flex;
-  justify-content: space-between;
+  margin: 25px;
 }
 .title-bold {
   font-weight: bold;
 }
+span {
+  margin-right: 7px;
+}
+.debt-img {
+  width: 200px;
+  height: 200px;
+}
 
-.top-btn {
+#edit-btn {
+  color: white;
   background: #276bc6;
+  padding: 12px 24px;
   border-radius: 5px;
   border: none;
-  padding: 5px;
-  margin: 15px;
-}
-.table {
-  padding: 10px;
+  width: 121px;
 }
 
-.table-btn {
-  background: #2b9658;
+#del-btn {
   color: white;
-  padding: 5px;
+  background: #c63030;
+  padding: 12px 24px;
+  border-radius: 5px;
   border: none;
-  border-radius: 10px;
-  cursor: pointer;
+  width: 121px;
 }
 
-.top-btn a {
-  text-decoration: none;
-  color: #fff;
+.img-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.debt-details {
+  color: black;
+  margin: 40px;
+}
+
+.detail-row {
+  display: flex;
+  font-size: 16px;
+  gap: 60px;
+  margin: 15px 0;
+}
+
+.label {
+  color: #7d7a82;
+  text-align: left;
+}
+
+.word {
+  font-size: 22px;
 }

@@ -132,6 +132,9 @@ app.get("/schools", checkAuthenticated, (req, res) => {
 app.get("/profile", checkAuthenticated, (req, res) => {
   res.render("profile.ejs", { name: req.user.name });
 });
+app.get("/debtorsdetails", checkAuthenticated, (req, res) => {
+  res.render("debtorsdetails.ejs", { name: req.user.name });
+});
 app.get("/drop-c", checkAuthenticated, (req, res) => {
   res.render("drop-c.ejs", { name: req.user.name });
 });

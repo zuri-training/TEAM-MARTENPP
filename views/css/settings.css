@@ -75,6 +75,11 @@ li img {
   width: 1080px;
 }
 
+.card-group {
+  text-align: center;
+  cursor: pointer;
+}
+
 .card {
   background: #ceceeb;
   padding: 50px;
