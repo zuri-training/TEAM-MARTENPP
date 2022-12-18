@@ -1,0 +1,140 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#FFFCFC;
+    color:#090C9B;
+    width:100%;
+    height:100vh;
+  }
+  
+  .container {
+    margin-left:15%;
+    height: 100vh;
+    padding: 15px 30px;
+  }
+   a {
+    text-decoration: none;
+    color:#090C9B;
+  }
+  li {
+    list-style: none;
+    margin: 20px;
+  }
+  li img {
+    width: 77px;
+    height:64px
+  }
+  
+  .sidebar{
+    position:fixed;
+    top:0; left:0; bottom:0;
+    width:15%;
+    height:100vh;
+    background: #CECEEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    
+  }
+  .school-logo {
+    display: flex;
+   
+  }
+  .search {
+    border-radius:30px ;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    border: 1.5px solid #080A81
+  }
+  .blanket {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .top-left {
+    display: flex;
+  }
+  .border-rotate {
+    border-left: 1px #080A81 solid;
+    width: 8px;
+    margin:  7px;
+    
+  }
+  .admin {
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  .bottom {
+    border-bottom: 1px rgb(232, 232, 236) solid;
+    width: 1080px;  
+  } 
+  .content {
+    padding-bottom:20px;
+  }
+
+  .title {
+    margin: 25px;
+  }
+  .title-bold {
+    font-weight: bold;
+  }
+  span {
+    margin-right: 7px;
+  }
+.debt-img{
+  width: 200px;
+height: 200px;
+}
+
+#edit-btn {
+color: white;
+background:#276BC6;
+padding: 12px 24px;
+border-radius: 5px;
+border: none;
+width: 121px;
+}
+
+#del-btn {
+    color: white;
+    background:#C63030;
+    padding: 12px 24px;
+    border-radius: 5px;
+    border: none;
+    width: 121px;
+}
+
+.img-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.debt-details {
+  color:black;
+  margin: 40px;
+}
+
+.detail-row {
+  display: flex;
+  font-size: 16px;
+  gap:60px;
+  margin: 15px 0;
+}
+
+.label {
+  color:#7D7A82;
+  text-align: left;
+}
+
+ .word{
+  font-size: 22px;
+}
